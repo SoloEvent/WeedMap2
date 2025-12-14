@@ -19,7 +19,7 @@ const permanentMarkers = {
     { x: 4871, y: 5940, label: "Weed Location #4" },
     ],
     meth: [
-        // Example: { x: 2345, y: 3456, label: "Desert Lab" },
+        // example: { x: 2345, y: 3456, label: "meth lab #1" },
         
     ],
     washing: [
