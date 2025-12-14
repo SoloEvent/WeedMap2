@@ -14,7 +14,7 @@ function handleLogin(event) {
         window.location.href = 'index.html';
         return false;
     } else {
-        errorMessage.textContent = 'Invalid username or password. Please try again.';
+        errorMessage.textContent = 'You typed the wrong shit fuckhead, you must be LSPD';
         document.getElementById('password').value = '';
         return false;
     }
