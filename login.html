@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHP Login</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://r2.fivemanage.com/WFJUnztU6NFDzltrV7jCl/SAHP_logo.png" alt="SAHP Badge" class="badge">
+        <div class="header-text">
+            <div class="title">SAN ANDREAS HIGHWAY PATROL</div>
+            <div class="subtitle">Authority, Obedience and Force</div>
+        </div>
+    </div>
+
+    <div class="gold-bar"></div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">SAHP Login</div>
+            <div class="login-content">
+                <p class="login-instruction">Please login below to access this computer:</p>
+                
+                <form id="loginForm" onsubmit="return handleLogin(event)">
+                    <div class="form-group">
+                        <label>Username:</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="error-message" id="errorMessage"></div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bar"></div>
+
+    <script src="login.js"></script>
+</body>
+</html>
