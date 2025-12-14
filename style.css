@@ -201,6 +201,112 @@ body {
     box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
 }
 
+.marker-type-selector {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.type-title {
+    color: #4CAF50;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.type-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.type-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.type-btn.active {
+    border-color: currentColor;
+    box-shadow: 0 0 10px currentColor;
+}
+
+.weed-btn {
+    color: #4CAF50;
+}
+
+.weed-btn.active {
+    background: rgba(76, 175, 80, 0.3);
+}
+
+.meth-btn {
+    color: #2196F3;
+}
+
+.meth-btn.active {
+    background: rgba(33, 150, 243, 0.3);
+}
+
+.washing-btn {
+    color: #FF9800;
+}
+
+.washing-btn.active {
+    background: rgba(255, 152, 0, 0.3);
+}
+
+.location-section {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 8px;
+    padding: 5px 8px;
+    background: rgba(76, 175, 80, 0.2);
+    border-radius: 4px;
+}
+
+.location-item.weed-item {
+    border-color: #4CAF50;
+    background: rgba(76, 175, 80, 0.15);
+}
+
+.location-item.weed-item:hover {
+    background: rgba(76, 175, 80, 0.3);
+    border-color: #4CAF50;
+}
+
+.location-item.meth-item {
+    border-color: #2196F3;
+    background: rgba(33, 150, 243, 0.15);
+}
+
+.location-item.meth-item:hover {
+    background: rgba(33, 150, 243, 0.3);
+    border-color: #2196F3;
+}
+
+.location-item.washing-item {
+    border-color: #FF9800;
+    background: rgba(255, 152, 0, 0.15);
+}
+
+.location-item.washing-item:hover {
+    background: rgba(255, 152, 0, 0.3);
+    border-color: #FF9800;
+}
+
 .marker {
     position: absolute;
     width: 30px;
