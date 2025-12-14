@@ -14,7 +14,7 @@ function handleLogin(event) {
         window.location.href = 'index.html';
         return false;
     } else {
-        errorMessage.textContent = 'You typed the wrong shit fuckhead, you must be LSPD';
+        errorMessage.textContent = 'You typed the wrong info fuckhead, you must be LSPD';
         document.getElementById('password').value = '';
         return false;
     }
