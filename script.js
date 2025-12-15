@@ -17,6 +17,7 @@ const permanentMarkers = {
     { x: 6137, y: 3115, label: "Weed Location #2" },
     { x: 2472, y: 3666, label: "Weed Location #3" },
     { x: 4871, y: 5940, label: "Weed Location #4" },
+    { x: 6011, y: 3688, label: "Weed Farm #5" },
     ],
     meth: [
     { x: 5707, y: 4998, label: "Meth Table #1" },
