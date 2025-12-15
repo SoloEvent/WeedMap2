@@ -22,6 +22,7 @@ const permanentMarkers = {
     ],
     meth: [
     { x: 5707, y: 4998, label: "Meth Table #1" },
+    { x: 2619, y: 5285, label: "Meth Table #2" },
     ],
     washing: [
     { x: 5391, y: 6397, label: "Washing Machine #1" },
