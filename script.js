@@ -28,6 +28,7 @@ const permanentMarkers = {
     { x: 5391, y: 6397, label: "Washing Machine #1" },
     { x: 5593, y: 6021, label: "Washing Machine #2" },
     { x: 5599, y: 5711, label: "Washing Machine #3" },
+    { x: 4770, y: 3162, label: "Washing Machine #4" },
     ]
 };
 // ============================================
