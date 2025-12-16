@@ -20,12 +20,12 @@ async function handleLogin(event) {
       sessionStorage.setItem("sahpAuthenticated", "true");
       window.location.href = "index.html";
     } else {
-      errorMessage.textContent = "Invalid username or password.";
+      errorMessage.textContent = "Invalid username or password fuckhead.";
       document.getElementById("password").value = "";
     }
 
   } catch (err) {
     console.error("Login error:", err);
-    errorMessage.textContent = "Server error. Please try again.";
+    errorMessage.textContent = "Server error. Cry to mother.";
   }
 }
