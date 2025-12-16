@@ -6,7 +6,7 @@ async function handleLogin(event) {
   const errorMessage = document.getElementById("errorMessage");
 
   try {
-    const res = await fetch("https://b512657e.auth-worker-39d.pages.dev/login", {
+    const res = await fetch("https://auth-worker.rdrc130.workers.dev", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
