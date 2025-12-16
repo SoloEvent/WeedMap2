@@ -25,6 +25,7 @@ async function handleLogin(event) {
     }
 
   } catch (err) {
+    console.error("Login error:", err);
     errorMessage.textContent = "Server error. Please try again.";
   }
 }
