@@ -17,7 +17,7 @@ async function handleLogin(event) {
     const data = await res.json();
 
     if (data.success) {
-      sessionStorage.setItem("authToken", data.token);
+      sessionStorage.setItem("sahpAuthenticated", "true");
       window.location.href = "index.html";
     } else {
       errorMessage.textContent = "Invalid username or password.";
