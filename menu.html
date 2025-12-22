@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHP - Main Menu</title>
+    <link rel="stylesheet" href="menu-style.css">
+</head>
+<body>
+    <script>
+        if (!sessionStorage.getItem('sahpAuthenticated')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <div class="header">
+        <img src="https://r2.fivemanage.com/WFJUnztU6NFDzltrV7jCl/SAHP_logo.png" alt="SAHP Badge" class="badge">
+        <div class="header-text">
+            <div class="title">SAN ANDREAS HIGHWAY PATROL</div>
+            <div class="subtitle">Observant, Noble and Exemplary</div>
+        </div>
+    </div>
+
+    <div class="gold-bar"></div>
+
+    <div class="main-container">
+        <div class="menu-section">
+            <div class="section-header">ILLEGAL OPERATIONS DATABASE</div>
+            
+            <div class="menu-grid">
+                <div class="menu-card weed-card" onclick="showDetails('weed')">
+                    <div class="card-icon">🌿</div>
+                    <div class="card-title">Weed Farms</div>
+                    <div class="card-count" id="weedCount">0 Locations</div>
+                </div>
+
+                <div class="menu-card meth-card" onclick="showDetails('meth')">
+                    <div class="card-icon">🧪</div>
+                    <div class="card-title">Meth Tables</div>
+                    <div class="card-count" id="methCount">0 Locations</div>
+                </div>
+
+                <div class="menu-card washing-card" onclick="showDetails('washing')">
+                    <div class="card-icon">🧺</div>
+                    <div class="card-title">Washing Machines</div>
+                    <div class="card-count" id="washingCount">0 Locations</div>
+                </div>
+
+                <div class="menu-card map-card" onclick="openMap()">
+                    <div class="card-icon">🗺️</div>
+                    <div class="card-title">View Map</div>
+                    <div class="card-description">Interactive Location Map</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="footer-bar"></div>
+
+    <!-- Details Modal -->
+    <div class="modal" id="detailsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title" id="modalTitle">Location Details</span>
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
