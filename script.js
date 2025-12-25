@@ -9,26 +9,20 @@ let markerIdCounter = 1;
 let selectedMarkerType = 'weed';
 
 // ============================================
-// # PUT COORDS HERE
+// # PUT COORDS HERE (paste between the brackets)
 // ============================================
 const permanentMarkers = {
     weed: [
-    { x: 2355, y: 3780, label: "Weed Location #1" },
-    { x: 6137, y: 3115, label: "Weed Location #2" },
-    { x: 2472, y: 3666, label: "Weed Location #3" },
-    { x: 4871, y: 5940, label: "Weed Location #4" },
-    { x: 6011, y: 3688, label: "Weed Location #5" },
-    { x: 6481, y: 2566, label: "Weed Location #6" },
+        // Example: { x: 1234, y: 5678, label: "North Farm" },
+        
     ],
     meth: [
-    { x: 5707, y: 4998, label: "Meth Table #1" },
-    { x: 2619, y: 5285, label: "Meth Table #2" },
+        // Example: { x: 2345, y: 3456, label: "Desert Lab" },
+        
     ],
     washing: [
-    { x: 5391, y: 6397, label: "Washing Machine #1" },
-    { x: 5593, y: 6021, label: "Washing Machine #2" },
-    { x: 5599, y: 5711, label: "Washing Machine #3" },
-    { x: 4770, y: 3162, label: "Washing Machine #4" },
+        // Example: { x: 3456, y: 4567, label: "Laundromat" },
+        
     ]
 };
 // ============================================
@@ -42,8 +36,11 @@ const markerNotice = document.getElementById('markerNotice');
 const locationsList = document.getElementById('locationsList');
 
 let loaded = 0;
+let imageTimeout;
+
 function imageLoaded() {
     loaded++;
+    clearTimeout(imageTimeout);
     if (loaded === 1) {
         loading.style.display = 'none';
         satelliteMap.style.display = 'block';
@@ -52,10 +49,19 @@ function imageLoaded() {
         updateLocationsList();
     }
 }
+
 satImage.onload = imageLoaded;
 satImage.onerror = function() {
-    loading.innerHTML = '<div>Error loading map. Please check your connection.</div>';
+    clearTimeout(imageTimeout);
+    loading.innerHTML = '<div style="color: #f44336;">Error loading map.<br>Please refresh the page.</div>';
 };
+
+// Set timeout for slow loading
+imageTimeout = setTimeout(() => {
+    if (loaded === 0) {
+        loading.innerHTML = '<div style="color: #ff9800;">Map is taking longer than expected...<br>Please wait or refresh the page.</div>';
+    }
+}, 10000);
 
 function setTransform() {
     const t = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
