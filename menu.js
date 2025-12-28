@@ -6,6 +6,7 @@ const permanentMarkers = {
         { x: 4871, y: 5940, label: "Weed Location #4", area: "Missing Location", description: "Placeholder description", images: [] },
         { x: 6011, y: 3688, label: "Weed Location #5", area: "East of Quary", description: "Found by Drug Officer During routine search of State Borders", images: ["https://r2.fivemanage.com/WFJUnztU6NFDzltrV7jCl/image3.png", "https://r2.fivemanage.com/WFJUnztU6NFDzltrV7jCl/image4.png"] },
         { x: 6481, y: 2566, label: "Weed Location #6", area: "Northern HumaneLabs Island", description: "Known spot by Drug Officers", images: ["https://r2.fivemanage.com/WFJUnztU6NFDzltrV7jCl/image.png"] },
+        { x: 4770, y: 3162, label: "Weed Location #7", area: "Fort Zancudo Swamp", description: "Found by Drug Officer during routine flight", images: ["https://i.imgur.com/SOqINNc.jpeg"] },
     ],
     meth: [
         { x: 5707, y: 4998, label: "Meth Table #1", area: "South Palmer-Taylor Power Station", description: "Found by Drug Officer during routine search of State Borders", images: ["https://r2.fivemanage.com/WFJUnztU6NFDzltrV7jCl/image5.png"] },

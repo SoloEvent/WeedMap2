@@ -13,16 +13,23 @@ let selectedMarkerType = 'weed';
 // ============================================
 const permanentMarkers = {
     weed: [
-        // Example: { x: 1234, y: 5678, label: "North Farm" },
-        
+    { x: 2355, y: 3780, label: "Weed Location #1" },
+    { x: 6137, y: 3115, label: "Weed Location #2" },
+    { x: 2472, y: 3666, label: "Weed Location #3" },
+    { x: 4871, y: 5940, label: "Weed Location #4" },
+    { x: 6011, y: 3688, label: "Weed Location #5" },
+    { x: 6481, y: 2566, label: "Weed Location #6" },
+    { x: 2049, y: 3869, label: "Weed Location #7" },
     ],
     meth: [
-        // Example: { x: 2345, y: 3456, label: "Desert Lab" },
-        
+    { x: 5707, y: 4998, label: "Meth Table #1" },
+    { x: 2619, y: 5285, label: "Meth Table #2" },
     ],
     washing: [
-        // Example: { x: 3456, y: 4567, label: "Laundromat" },
-        
+    { x: 5391, y: 6397, label: "Washing Machine #1" },
+    { x: 5593, y: 6021, label: "Washing Machine #2" },
+    { x: 5599, y: 5711, label: "Washing Machine #3" },
+    { x: 4770, y: 3162, label: "Washing Machine #4" },
     ]
 };
 // ============================================
